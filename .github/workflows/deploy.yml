@@ -35,9 +35,11 @@ jobs:
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
+        run: npm run deploy
         env:
+          GIT_USER: FIFCC
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token
 
-        run: npm run deploy
+        
 
 

@@ -24,6 +24,8 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'FIFCC', // Usually your GitHub org/user name.
   projectName: 'yurish-book', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // 部署分支
+  trailingSlash: false, // 设置是否添加末尾斜杠
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
