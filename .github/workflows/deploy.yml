@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # 监控 main 分支（可以根据需要修改为其他分支）
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 使用最新的 Ubuntu 系统来运行任务
+
+    steps:
+      # Checkout 仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # 设置 Node.js 环境
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # 根据需要设置 Node.js 版本
+
+      # 安装项目依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 构建 Docusaurus 项目
+      - name: Build project
+        run: npm run build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        env:
+          GIT_USER: ${{ secrets.GITHUB_ACTOR }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token
+        run: npm run deploy
