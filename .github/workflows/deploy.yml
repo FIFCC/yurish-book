@@ -35,10 +35,10 @@ jobs:
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: git remote set-url origin https://FIFCC:${{ secrets.GITHUB_TOKEN }}@github.com/FIFCC/yurish-book.git && npm run deploy
         env:
           GIT_USER: FIFCC
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token
+        
 
         
 
