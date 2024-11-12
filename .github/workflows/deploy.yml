@@ -34,3 +34,5 @@ jobs:
           GIT_USER: ${{ secrets.GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token
         run: npm run deploy
+
+
