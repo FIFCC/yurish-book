@@ -13,6 +13,8 @@ jobs:
       # Checkout 仓库代码
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # 设置 Node.js 环境
       - name: Set up Node.js
@@ -39,7 +41,7 @@ jobs:
         env:
           GIT_USER: FIFCC
         
-          
+
 
         
 
