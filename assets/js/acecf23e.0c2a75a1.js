@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyurish_book=self.webpackChunkyurish_book||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/yurish-book/blog","blogTitle":"Blog","authorsListPath":"/yurish-book/blog/authors"}')}}]);

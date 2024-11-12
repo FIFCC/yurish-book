@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyurish_book=self.webpackChunkyurish_book||[]).push([[9363],{9596:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/yurish-book/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
